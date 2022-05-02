@@ -1,0 +1,48 @@
+.btn-default {
+	
+}
+
+.btn-primary {
+	background-color: #170085;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 10px 25px;
+    .ubuntuRegular(16px);
+
+    &--large {
+    	.ubuntuBold(24px);
+    }
+}
+
+.btn-primary-rounded {
+	background-color: #170085;
+    color: #FFF;
+    border-radius: 30px;
+    padding: 10px 25px;
+    .ubuntuRegular(16px);
+
+    &--large {
+    	.ubuntuBold(24px);
+    	padding: 15px 30px;
+    }
+}
+
+@media @hover {
+
+	.btn-primary {
+		.transition(.2s);
+
+		&:hover {
+			color: #ed0059;
+		}
+	}
+
+	.btn-primary-rounded {
+		.transition(.2s);
+
+		&:hover {
+			background-color: #2000bb;
+		}
+	}
+
+}

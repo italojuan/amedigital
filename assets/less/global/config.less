@@ -1,0 +1,93 @@
+// Colors
+@branco: #FFFFFF;
+@preto: #000000;
+
+@c-primary: #333;
+@c-secondary: #FFF;
+
+// Fonts
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url('../../assets/fonts/Ubuntu-Light.ttf');
+    src: url('../../assets/fonts/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url('../../assets/fonts/Ubuntu-Regular.ttf');
+    src: url('../../assets/fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url('../../assets/fonts/Ubuntu-Medium.ttf');
+    src: url('../../assets/fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: url('../../assets/fonts/Ubuntu-Bold.ttf');
+    src: url('../../assets/fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntuLight(@x){font:@x 'Ubuntu Light';}
+.ubuntuRegular(@x){font:@x 'Ubuntu Regular';}
+.ubuntuMedium(@x){font:@x 'Ubuntu Medium';}
+.ubuntuBold(@x){font:@x 'Ubuntu Bold';}
+
+// Globals
+body {
+
+    .ubuntuRegular(16px);
+    color: #333;
+
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@hover: ~"only screen and (min-width: 1200px)";
+@desktop: ~"(min-width: 993px) and (max-width: 1199px)";
+@tablet: ~"only screen and (max-width: 992px)";
+@mobile: ~"only screen and (max-width: 767px)";
+@mobileSmall: ~"only screen and (max-width: 360px)";
+
+
+// Hide and Show elements
+@media @hover {
+    .d-none-lg {
+        display: none;
+    }
+}
+
+@media @desktop {
+    .d-none-md {
+        display: none;
+    }
+}
+
+@media @tablet {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .d-none-sm {
+        display: none;
+    }
+}
+
+@media @mobile {
+
+    .d-none-xs {
+        display: none;
+    }
+}

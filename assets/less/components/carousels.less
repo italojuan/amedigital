@@ -1,0 +1,107 @@
+.api-carousel {
+
+	&__item {
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__image {
+			width: 100%;
+			margin-right: 50px;
+		}
+
+
+		&__tt {
+			.ubuntuBold(24px);
+			margin-bottom: 20px;
+
+		}
+
+		&__desc {	
+			.ubuntuRegular(18px);
+		}
+	}
+
+	.owl-nav {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+	    left: 515px;
+	    bottom: 15px;
+	}
+
+	.owl-nav button.owl-prev,
+	.owl-nav button.owl-next {
+		padding: 15px 20px !important;
+		background-color: #ed0059;
+		color: #FFF;
+		margin: 15px 5px;
+	}
+}
+
+@media @desktop {
+
+	.api-carousel {
+
+		&__item {
+			width: 85%;
+		}
+
+		.owl-nav {
+			display: flex;
+			justify-content: center;
+			position: absolute;
+		    left: 390px;
+		    bottom: 5px;
+		}
+
+		.owl-nav button.owl-prev,
+		.owl-nav button.owl-next {
+			padding: 15px 20px !important;
+			background-color: #ed0059;
+			color: #FFF;
+			margin: 15px 5px;
+		}
+	}
+}
+
+@media @mobile {
+
+	.api-carousel {
+
+		&__item {
+			width: 85%;
+			flex-direction: column;
+
+			&__image {
+				margin-right: 0;
+			}
+
+			&__tt {
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			&__desc {
+				text-align: center;
+			}
+		}
+
+		.owl-nav {
+			position: relative;
+			left: 0;
+			margin-top: 30px;
+		}
+
+		.owl-nav button.owl-prev,
+		.owl-nav button.owl-next {
+			padding: 15px 20px !important;
+			background-color: #ed0059;
+			color: #FFF;
+			margin: 15px 5px;
+		}
+	}
+
+}

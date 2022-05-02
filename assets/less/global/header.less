@@ -1,0 +1,112 @@
+.header {
+	display: flex;
+	align-items: center;
+	background-color: rgb(237, 0, 89);
+	height: 90px;
+
+	.logo {
+		margin: 0;
+
+		&__image {
+			width: 145px;
+			height: 40px;
+			
+
+			svg {
+				color: #FFF;
+			}
+			
+			.path {
+				opacity: 0.5;
+			}
+		}
+	}
+
+}
+
+@media @hover {
+
+	.header {
+
+	}
+}
+
+@media @desktop {
+
+	.header {
+
+	}
+}
+
+@media @tablet {
+
+	.header {
+	
+	}
+}
+
+@media @mobile {
+
+	.header {
+		height: 70px;
+		position: fixed;
+		width: 100%;
+		z-index: 99999;
+
+
+		.logo {
+
+			&__image {
+				position: relative;
+				z-index: 999999;
+			}
+		}
+
+		.btn-menu,
+	    .btn-menu:after,
+	    .btn-menu:before {
+	        width: 22px;
+	        height: 2px;
+	        background-color: #fff;
+	        transition: .2s ease-in-out
+	    }
+		.btn-mob {
+			display: flex;
+			justify-content: flex-end;
+	        position: relative;
+	        top: 18px;
+	        left: 0px;
+	        cursor: pointer;
+	        z-index: 999999;
+	    }
+    	.btn-menu:after,
+    	.btn-menu:before {
+	        position: absolute;
+	        content: ''
+	    }
+	    .btn-menu {
+	        display: inline-block;
+	        color: #fff;
+	        font-size: 21px;
+	        vertical-align: middle
+	    }
+	    .btn-menu:before {
+	        top: -8px
+	    }
+	    .btn-menu:after {
+	        top: 8px
+	    }
+	    .btn-menu.active {
+	        background-color: transparent
+	    }
+	    .btn-menu.active:before {
+	        top: 0;
+	        transform: rotate(45deg)
+	    }
+	    .btn-menu.active:after {
+	        top: 0;
+	        transform: rotate(-45deg)
+	    }
+		
+	}
+}

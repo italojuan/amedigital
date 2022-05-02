@@ -1,0 +1,70 @@
+.banner-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	&__tt {
+		width: 100%;
+		.ubuntuBold(60px);
+		margin-bottom: 20px;
+	}
+
+	&__st {
+		width: 100%;
+		.ubuntuMedium(24px);
+		margin-bottom: 30px;
+	}
+}
+
+.section-title {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+	
+	&__tt {
+		width: 100%;
+		.ubuntuBold(40px);
+		margin-bottom: 5px;
+	}
+
+	&__st {
+		width: 100%;
+		.ubuntuRegular(18px);
+		color: #666;
+		margin-bottom: 0px;
+	}
+}
+
+@media @mobile {
+
+	.banner-title {
+		
+		&__tt {
+			width: 100%;
+			.ubuntuBold(36px);
+		}
+
+		&__st {
+			width: 100%;
+			.ubuntuMedium(20px);
+		}
+	}
+
+	.section-title {
+		
+		&__tt {
+			width: 100%;
+			.ubuntuBold(28px);
+		}
+
+		&__st {
+			width: 100%;
+			.ubuntuRegular(14px);
+		}
+	}
+
+}

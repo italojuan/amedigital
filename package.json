@@ -1,0 +1,34 @@
+{
+  "name": "Ítalo Albuquerque - Front end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-htmlmin": "*",
+    "gulp-less": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-svgmin": "*",
+    "gulp-svgstore": "*",
+    "gulp-uglify": "*",
+    "path": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.0.0",
+    "gulp-file-include": "^1.0.0",
+    "quick-local-ip": "^1.0.7"
+  }
+}

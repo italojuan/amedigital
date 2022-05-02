@@ -1,0 +1,36 @@
+.features-cards {
+	width: 270px;
+	height: 200px;
+	padding: 20px 65px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url('../../assets/images/content/ame_icon.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 100%
+	}
+
+	&--invert {
+
+		&:before {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__text {
+		position: relative;
+		text-align: center;
+		z-index: 1;
+	}
+}

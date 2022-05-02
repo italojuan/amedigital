@@ -1,0 +1,113 @@
+.footer {
+	min-height: 250px;
+	background-color: #313647;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 60px 0;
+	}
+
+	&__copyright {
+		background-color: #222634;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 0;
+
+	}
+
+	.footer-logo {
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&__image {
+			width: 220px;
+			margin-bottom: 20px;
+		}
+
+		&__slogan {
+			.ubuntuMedium(28px);
+		}
+	}
+
+	.social {
+
+		&__icon {
+			font-size: 24px;
+			color: #FFF;
+			margin: 0 10px;
+		}
+	}
+
+	.copyright {
+		
+		&__text {
+			.ubuntuRegular(16px);
+		}
+	}
+	
+}
+
+
+@media @hover {
+
+	.footer {
+
+		.social {
+
+			&__icon {
+				.transition(.2s);
+
+				&:hover {
+					color: #ed0059;
+				}
+			}
+		}
+	}
+}
+
+@media @desktop {
+
+	.footer {
+
+	}
+}
+
+@media @tablet {
+
+	.footer {
+	
+	}
+}
+
+@media @mobile {
+
+	.footer {
+
+		.footer-logo {
+
+			&__image {
+				width: 170px;
+			}
+
+			&__slogan {
+				font-size: 18px;
+			}
+		}
+
+		.copyright {
+
+			&__text {
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+
+	}
+}
